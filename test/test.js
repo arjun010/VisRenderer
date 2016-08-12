@@ -4,8 +4,8 @@
 (function () {
     tester = {};
 
-    // histogramTest();
-    twoAxisBarChartTest();
+    histogramTest();
+    // twoAxisBarChartTest();
 
     function histogramTest() {
         d3.csv("data/cars.csv",function (data) {
