@@ -8,6 +8,7 @@
         this.data = [];
         this.xAttr = "";
         this.yAttr = "";
+        this.tooltipLabelAttribute = "";
         this.colorAttr = "";
         this.sizeAttr = "";
         this.xFacetAttr = "";
@@ -30,6 +31,10 @@
     VisObject.prototype.setYAttr = function(attr) {
         this.yAttr = attr;
         updateAttributeScore(this);
+    };
+
+    VisObject.prototype.setLabelAttr = function(attr) {
+        this.tooltipLabelAttribute = attr;
     };
 
     VisObject.prototype.setColorAttr = function(attr) {

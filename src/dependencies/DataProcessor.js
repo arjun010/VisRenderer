@@ -103,6 +103,7 @@
     };
 
     dataProcessor.getAttributeDetails = function(attribute){
+        //console.log(attribute, attributeMap[attribute])
         return attributeMap[attribute];
     };
 })();
